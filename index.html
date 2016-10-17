@@ -5,16 +5,17 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+	<!--<link rel="stylesheet" href="shower/themes/material/styles/screen-16x10.css">-->
 </head>
 <body class="shower list">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Vorschläge Bachelorthesis vioma GmbH</h1>
+		<!--<p>Yours Truly, Famous Inc.</p>-->
 	</header>
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+		<h2 >Vorschläge für Bachelorthesis bei der vioma<!--<<img src="pictures/vioma-logo.svg" alt="vioma logo">--></h2>
+		<p>Alexander Kinnast</p>
 		<img src="pictures/cover.jpg" alt="" class="cover">
 		<!--
 			To apply styles to the certain slides
@@ -37,124 +38,129 @@
 				#cover p a {
 					color:#FFF;
 					}
+			.fonts {
+				position: relative;
+				text-align: center;
+				text-shadow: rgb(255, 255, 255);
+				padding: 0 10px 0 10px;
+			}
+			#font1 {
+				font-size: larger;
+				text-align: right;
+				color: blue;
+				justify-content: space-between;
+			}
+			#font2{
+				font-size: larger;
+				color: green;
+				justify-content: flex-end;
+			}
+			#font3{
+				font-size: larger;
+				text-align: left;
+				justify-content: flex-start;
+			}
+			li a {
+				text-decoration: none;
+				text-shadow: rgb(255,255,255);
+			}
+			#lt{
+				text-decoration: line-through;
+			}
+			.slide p {
+				margin-bottom: 0em !important;
+			}
 		</style>
 	</section>
-	<section class="slide">
-		<h2>Shower key features</h2>
+	<section id="1" class="slide">
+		<h2>Inhaltsangabe</h2>
 		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
+			<li><a href="#2">Interessensgebiete</a></li>
+			<li><a href="#3">allgemeine Themenvorschläge</a></li>
+			<li><a href="#4">Ideen im Fontendbereich</a></li>
+			<li><a href="#5">Ideen im Entwicklungsbereich</a></li>
+			<li><a href="#6">Themenvorschläge mit betriebswirtschaftlichem Bezug</a></li>
+			<li><a href="#7">Sonstige Ideen</a></li>
 		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+		<!--<p class="note"></p>-->
 	</section>
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+	<section id="2" class="slide">
+		<h2>Interessensgebiete</h2>
+		<div class="fonts">
+			<div id="font1">Business Intelligence (Dashboardaufbau, DWH) </div>
+			<div id="font3">Content Management Systeme</div>
+			<div id="font2">Datenanalyse - Big Data</div>
+			<div id="font3">IT-Sicherheit<span id="font1" style="padding-left:30px"> Digitalisierung</span></div>
+			<div id="font1">Mobile Computing</div>
+			<div id="font2">Data Mining - Datenvisualisierung</div>
+			<div </div>
+			<div id="font3">Cloud Computing </div>
+		</div>
 	</section>
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+	<section id="3" class="slide">
+		<h2>allgemeine Themenvorschläge</h2>
+		<ul>
+		<li>Konzeption und Einführung, Integration, Migration, Entwicklung</li>
+			<li>Evaluierung einer Software + Softwareauswahl</li>
+			<li>Optimierung eines bestehenden Systemes 
+			<li>Automatisierter Webseitentest </li>
+			<li>Analyse und Konzeptionierung und Bewertung von …</li>
+			<li>Neukonzeptionierung und Umsetzung von …</li>
+			<li>Erstellung und Einführung und Implementierung von ...</li>
+			<li>Konzeptionierung und prototypische Umsetzung von …</li>
+			<li>Auswahl von Alternativen zu bestehenden Softwaresystemen …</li>
+			<li>Geschäftsprozessoptimierung/li>
+			<li>Evalulierung von Web-Automatisierungstools zur Qualitätsverbesserung</li>
+			<li>Stammdatenmanagement / Dokumentenmanagement</li>
+			<li>Implementierung von ...</li>
+		</ul>
 	</section>
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
+	<section id="4" class="slide">
+		<h2>Ideen im Fontendbereich</h2>
+			<p>"Studie zur UX mit Hilfe des Eyetrackinglabor HS Offenburg"</p>
+			<p>"Evaluierung eines Frameworks (Angular, React, etc.) "</p>
+			<p>"Analyse des Nutzerverhaltens im Bereich Websites"</p>
+			<p>"Entwicklung, Optimierung Auswahl von Methoden zur Contentpflege"</p>
+			<p>...</p>
+			<p class="note">In anderen Bereichen,Abteilungen denkbar ?</p>
 	</section>
-	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
+	<section id="5" class="slide">
+		<h2>Ideen im Entwicklungsbereich</h2>
+		<ul>
+			<p>"Entwicklung eines Condeon Modules"</p>
+			<p>"Datenmigration zur Verwaltung von mehrsprachigen Websites"</p>
+			<p>"Konzeptionierung und Umsetzung eines einheitlichen Systems Preispflege"</p>
+			<p>"Visualierung der Preisregeln in der CST"</p>
+			<p>"..."</p>
+			<p class="note">In anderen Bereichen,Abteilungen denkbar ?</p>
+		</ul>
 	</section>
-	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
+	<section id="6" class="slide">
+	<h2>Ideen im betriebswirtschafltichen Bereich</h2>
+			<p>"Kostenkalkulation für ..."</p>
+			<p>"Methoden des Business Intelligence und die Umsetzung in einem KMU"</p>
+			<p>"Software zur Abrechung</p>
+			<p>"Analyse bzw. Studie zur Nutzung der CST, Condeon etc."</p>
+			<p>"Konzeption, Bewertung von KPIs(Key Performance Indicator)"</p>	
+			<p>...</p>
+			<p class="note">In anderen Bereichen,Abteilungen denkbar ?</p>
 	</section>
-	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
-	</section>
-	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
-	</section>
-	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
-	</section>
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+	<section id="7" class="slide" id="picture">
+		<h2>Sonstige Ideen</h2>
+		<ul>
+			<li>Verbesserung des Kundensupports</li>
+			<li>Entwicklung einer Mobile Anwendung </li>
+			<li>Qualitätssicherung QA</li>
+			<li>Konzeption und Umsetzung zur Dokumentenverwaltung und Bilderverwaltung in Condeon</li>
+			<li>Studie zum Einsatz von Open Source Software in KMUs</li>
+			<li>Einführung eines Sicherheitskonzeptes</li>
+			<li>Umsetzung eines Dashboards</li>
+			<li>IT-Projektmanagement</li> 
+			<li>Performanceanalyse im Bereich CST, Condeon</li>
+			<li>Datenintegration</li>
+			<li></li>
+			<li>...</li>
+		</ul>
 	</section>
 	<section class="slide" id="see-more">
 		<h2 class="shout">
@@ -171,6 +177,28 @@
 				}
 		</style>
 	</section>
+	<section class="slide">
+		<h2>Notizen</h2>
+		<ul>
+			<li>Testnotiz</li>
+		</ul>
+	</section>
+	<!--<<section id="7" class="slide">
+		<h2 class="shout shrink">You can even shout this way</h2>
+	</section>
+	<section class="slide">
+		<h2>Vorlesungen </h2>
+		<ol>
+			<li>Lets you reveal list items one by one</li>
+			<li class="next">To keep some key points</li>
+			<li class="next">In secret from audience</li>
+			<li class="next">But it will work only once</li>
+			<li class="next">Nobody wants to see the same joke twice</li>
+		</ol>
+	</section>
+	<section class="slide grid">
+		<h2>All nicely aligned to grid</h2>
+	</section>-->
 	<p class="badge">
 		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
 	</p>
@@ -179,7 +207,7 @@
 		just remove “progress” element.
 		-->
 	<div class="progress"></div>
-	<script src="node_modules/shower-core/shower.min.js"></script>
+	<script src="shower/shower.min.js"></script>
 	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
 	<!-- Photos by John Carey, fiftyfootshadows.net -->
 </body>
